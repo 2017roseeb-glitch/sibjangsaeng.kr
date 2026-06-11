@@ -50,7 +50,7 @@
         <a href="#story" data-i18n="nav.brand">브랜드</a>
         <a href="#lines" data-i18n="nav.lines">제품라인</a>
         <a
-          href="https://smartstore.naver.com/roseeb/category/aa78c466343e4253953fc2a3fef5c7aa?st=POPULAR&amp;dt=IMAGE&amp;page=1&amp;size=40"
+          href="https://mkt.shopping.naver.com/link/6a2a3dfd7754881f84810c9b"
           target="_blank"
           rel="noopener"
         ><span data-i18n="nav.store">스토어</span></a>
@@ -107,26 +107,25 @@
     </header>
 
     <main id="top">
-      <section class="landing-video" id="landing" aria-label="십장생 브랜드 메인 이미지">
-        <img
-          class="landing-image-media"
-          src="assets/landing-main.jpg"
-          alt="별빛 아래 꽃밭과 협곡 사이에 선 인물이 십장생의 시간을 바라보는 이미지"
-        />
-        <div class="landing-shade" aria-hidden="true"></div>
-        <div class="landing-copy" data-landing-copy>
-          <img src="assets/landing-logo.png" alt="SIBJANGSAENG" />
-          <h1>시간을 되돌리는 힘, 십장생</h1>
-          <p>
-            Rooted in Korean heritage, SibJangSaeng redefines<br />
-            timeless beauty through oriental skincare.
-          </p>
-        </div>
-      </section>
-
       <section class="hero" aria-label="십장생 메인 슬라이드">
         <div class="hero-slider">
-          <article class="hero-slide is-active">
+          <article class="hero-slide hero-slide-brand is-active">
+            <img
+              class="hero-image"
+              src="assets/landing-main.jpg"
+              alt="별빛 아래 꽃밭과 협곡 사이에 선 인물이 십장생의 시간을 바라보는 이미지"
+            />
+            <div class="landing-shade" aria-hidden="true"></div>
+            <div class="landing-copy is-visible">
+              <img src="assets/landing-logo.png" alt="SIBJANGSAENG" />
+              <h1>시간을 되돌리는 힘, 십장생</h1>
+              <p>
+                Rooted in Korean heritage, SibJangSaeng redefines<br />
+                timeless beauty through oriental skincare.
+              </p>
+            </div>
+          </article>
+          <article class="hero-slide hero-slide-campaign">
             <img class="hero-image" src="assets/hero-slide-01.jpg" alt="한복을 입은 모델과 꽃이 어우러진 십장생 캠페인 이미지" />
             <div class="hero-content">
               <p class="hero-subtitle">Timeless Beauty, SIBJANGSAENG</p>
@@ -137,7 +136,7 @@
               <a class="primary-link" href="#lines" data-i18n="home.hero1.cta">제품 라인 보기</a>
             </div>
           </article>
-          <article class="hero-slide">
+          <article class="hero-slide hero-slide-cheonsim">
             <img class="hero-image" src="assets/hero-slide-02.jpg" alt="천심 골드 에센스 제품이 놓인 십장생 캠페인 이미지" />
             <div class="hero-content">
               <p class="hero-subtitle">Renewed CHEONSIM Gold Essence</p>
@@ -150,7 +149,7 @@
               <a class="primary-link" href="cheonsim.html" data-i18n="common.exploreLine">라인 둘러보기</a>
             </div>
           </article>
-          <article class="hero-slide">
+          <article class="hero-slide hero-slide-cheonjihyang">
             <img class="hero-image" src="assets/hero-slide-03.png" alt="한복을 입은 모델이 천지향 제품을 들고 있는 십장생 캠페인 이미지" />
             <div class="hero-content">
               <p class="hero-subtitle" data-i18n="home.hero3.subtitle">한국적인 아름다움에서 시작된</p>
@@ -170,6 +169,7 @@
             <button class="is-active" type="button" data-slide-to="0" aria-label="1번 슬라이드 보기"></button>
             <button type="button" data-slide-to="1" aria-label="2번 슬라이드 보기"></button>
             <button type="button" data-slide-to="2" aria-label="3번 슬라이드 보기"></button>
+            <button type="button" data-slide-to="3" aria-label="4번 슬라이드 보기"></button>
           </div>
           <button class="slide-arrow" type="button" data-slide-next aria-label="다음 슬라이드">›</button>
         </div>
@@ -301,6 +301,44 @@
         </footer>
       </section>
     </main>
+
+    <nav class="section-progress" aria-label="페이지 섹션 이동" data-section-progress>
+      <span class="section-progress-track" aria-hidden="true">
+        <span class="section-progress-fill" data-section-progress-fill></span>
+      </span>
+      <button class="is-active" type="button" data-section-to="0" aria-label="메인 화면으로 이동">
+        <span>메인</span>
+      </button>
+      <button type="button" data-section-to="1" aria-label="브랜드 철학으로 이동">
+        <span>브랜드</span>
+      </button>
+      <button type="button" data-section-to="2" aria-label="제품 라인으로 이동">
+        <span>제품</span>
+      </button>
+      <button type="button" data-section-to="3" aria-label="데일리 리추얼로 이동">
+        <span>리추얼</span>
+      </button>
+      <button type="button" data-section-to="4" aria-label="문의 섹션으로 이동">
+        <span>문의</span>
+      </button>
+    </nav>
+
+    <div class="page-quick-actions" data-page-quick-actions>
+      <a class="page-quick-button" href="index.html" aria-label="홈으로 이동" title="홈">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3.5 10.5 12 3l8.5 7.5"></path>
+          <path d="M5.5 9.5V21h13V9.5"></path>
+          <path d="M9.5 21v-6h5v6"></path>
+        </svg>
+      </a>
+      <button class="page-quick-button" type="button" data-scroll-top aria-label="맨 위로 이동" title="맨 위로">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m5 11 7-7 7 7"></path>
+          <path d="M12 4v16"></path>
+        </svg>
+      </button>
+    </div>
+
     <script src="i18n.js"></script>
     <script src="script.js"></script>
   </body>
