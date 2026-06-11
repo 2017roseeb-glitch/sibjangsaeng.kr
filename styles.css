@@ -395,10 +395,6 @@ body.has-landing:not(.is-past-landing) .language-panel button:hover {
     linear-gradient(0deg, rgba(21, 19, 15, 0.48), rgba(21, 19, 15, 0) 45%);
 }
 
-.hero-slide-brand::after {
-  background: transparent;
-}
-
 .hero-image {
   height: 100%;
   left: 0;

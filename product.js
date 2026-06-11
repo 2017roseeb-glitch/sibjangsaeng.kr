@@ -90,7 +90,7 @@ const productLines = {
       title: "<span>산삼의힘을 피부에,</span><span>영양 시작을 알리는</span><span>천지향 수액</span>",
       body:
         "천지향 수액은 산삼배양근 성분을 담아 손상된 피부를 재생하고 수분을 공급합니다. 피부결을 매끄럽게 정돈하며 이후 단계의 흡수를 돕는 스킨케어의 첫 걸음입니다.",
-      meta: "150ml ㅣ 57,000원",
+      meta: "150ml ㅣ 60,000원",
       image: "assets/cheonjiyang-skin-toner-cropped.png",
       alt: "천지향 수액 제품 이미지",
       thumbLabel: "수액",
@@ -100,7 +100,7 @@ const productLines = {
       title: "<span>수분과 영양의</span><span>균형을 잡아주는</span><span>천지향 유액</span>",
       body:
         "천지향 유액은 한방 발효 추출 성분이 피부 속 수분막을 형성하여 촉촉함을 오래 유지시켜 줍니다. 가볍고 산뜻하게 흡수되며 수분과 유분의 밸런스를 균형 있게 케어합니다.",
-      meta: "150ml ㅣ 59,000원",
+      meta: "150ml ㅣ 60,000원",
       image: "assets/cheonjiyang-emulsion-cropped.png",
       alt: "천지향 유액 제품 이미지",
       thumbLabel: "유액",
@@ -142,7 +142,7 @@ const productLines = {
       title: "<span>피부 순환을</span><span>깨워주는</span><span>천지향 마사지 크림</span>",
       body:
         "천지향 마사지 크림은 한방 성분의 풍부한 영양을 담아 마사지하는 동안 피부 순환을 촉진시킵니다. 긴장된 피부를 이완시키고 광채 나는 탄력 피부로 가꾸어 줍니다.",
-      meta: "250ml ㅣ 40,000원",
+      meta: "250ml ㅣ 42,000원",
       image: "assets/cheonjiyang-massage-cream.png",
       alt: "천지향 마사지 크림 제품 이미지",
       thumbLabel: "마사지 크림",
@@ -154,7 +154,7 @@ const productLines = {
       title: "<span>부드럽게</span><span>씻어내는</span><span>천지향 클렌징 크림</span>",
       body:
         "천지향 클렌징 크림은 한방 성분이 메이크업과 노폐물을 부드럽게 용해하여 깨끗하게 씻어냅니다. 세정 후에도 피부 당김 없이 촉촉하고 편안한 세정감을 선사합니다.",
-      meta: "250ml ㅣ 32,000원",
+      meta: "250ml ㅣ 35,000원",
       image: "assets/cheonjiyang-cleansing-cream.png",
       alt: "천지향 클렌징 크림 제품 이미지",
       thumbLabel: "클렌징 크림",
@@ -188,7 +188,7 @@ const productLines = {
       title: "<span>자외선으로부터</span><span>피부를 지키는</span><span>천지향 썬크림</span>",
       body:
         "천지향 썬크림은 SPF50+ PA++++의 강력한 자외선 차단력과 함께 한방 보습 성분이 피부를 편안하게 케어합니다. 산뜻하게 밀착되며 자외선 차단과 스킨케어를 동시에 완성합니다.",
-      meta: "80ml ㅣ 38,000원 ㅣ SPF50+ PA++++ / foam cleansing 50ml",
+      meta: "80ml ㅣ 40,000원 ㅣ SPF50+ PA++++ / foam cleansing 50ml",
       image: "assets/cheonjiyang-sun-cream.png",
       alt: "천지향 썬크림 제품 이미지",
       thumbLabel: "썬크림",
@@ -231,7 +231,7 @@ const productLines = {
       title: "<span>완벽한 향,</span><span>완벽한 피부밸런스</span><span>천지향 2종 세트</span>",
       body:
         "천지향 수액과 유액으로 구성된 2종 세트로, 피부 재생과 수분 공급을 동시에 시작할 수 있습니다. 선물용으로도 손색없는 고품격 한방 스킨케어 세트입니다.",
-      meta: "150ml ㅣ 116,000원 ㅣ toner 150ml / emulsion 31ml / cream 15ml",
+      meta: "150ml ㅣ 120,000원 ㅣ toner 150ml / emulsion 31ml / cream 15ml",
       image: "assets/cheonjiyang-2set.png",
       alt: "천지향 2종 세트 제품 이미지",
       thumbLabel: "2종 세트",
@@ -255,7 +255,7 @@ const productLines = {
       title: "<span>피부 근본부터</span><span>채우는</span><span>금안수</span>",
       body:
         "금안수는 물 대신 100% '금안수'와 발효십장생복합체를 활용하여 피부 근본부터 다스리는 고품격 한방 수분 베이스입니다. 피부 속 깊이 수분을 공급하며 이후 단계의 흡수력을 높여줍니다.",
-      meta: "150ml ㅣ 49,000원",
+      meta: "150ml ㅣ 50,000원",
       image: "assets/kuman-skin-cropped.png",
       alt: "금안수 제품 이미지",
       thumbLabel: "금안수",
@@ -265,7 +265,7 @@ const productLines = {
       title: "<span>피부 결을</span><span>촉촉하게 정돈하는</span><span>금안액</span>",
       body:
         "금안액은 100% 금안수와 발효십장생복합체가 피부 깊은 곳까지 수분과 영양을 전달합니다. 가볍고 부드럽게 흡수되어 피부 밸런스를 균형 있게 맞추며 하루 종일 촉촉함을 유지시켜 줍니다.",
-      meta: "150ml ㅣ 49,000원",
+      meta: "150ml ㅣ 50,000원",
       image: "assets/kuman-emulsion-cropped.png",
       alt: "금안액 제품 이미지",
       thumbLabel: "금안액",
@@ -308,7 +308,7 @@ const productLines = {
       title: "<span>금안 스킨케어의</span><span>시작을 위한</span><span>2종 세트</span>",
       body:
         "금안수와 금안액으로 구성된 2종 세트로, 피부 근본부터 수분과 영양을 채우는 금안 라인을 간편하게 시작할 수 있습니다. 선물용으로도 손색없는 고품격 한방 스킨케어 세트입니다.",
-      meta: "150ml ㅣ 98,000원 ㅣ toner 150ml, emulsion 31ml",
+      meta: "150ml ㅣ 100,000원 ㅣ toner 150ml, emulsion 31ml",
       image: "assets/kuman-2set.png",
       alt: "금안 2종 세트 제품 이미지",
       thumbLabel: "2종 세트",
@@ -319,7 +319,7 @@ const productLines = {
       title: "<span>금안 라인의</span><span>정수를 담은</span><span>3종 세트</span>",
       body:
         "금안수, 금안액, 금안 진 크림과 에센스까지 구성한 3종 세트로, 금안 라인의 핵심 제품을 한번에 경험할 수 있습니다. 피부 근본부터 탄력, 수분, 마무리까지 완성하는 프리미엄 선물 세트입니다.",
-      meta: "150ml ㅣ 188,000원 ㅣ toner, emulsion 150ml, 31ml / cream 50ml / essence 10ml",
+      meta: "150ml ㅣ 190,000원 ㅣ toner, emulsion 150ml, 31ml / cream 50ml / essence 10ml",
       image: "assets/kuman-3set.png",
       alt: "금안 3종 세트 제품 이미지",
       thumbLabel: "3종 세트",
@@ -343,7 +343,7 @@ const productLines = {
       title: "<span>피부 재생을</span><span>완성하는</span><span>천삼진 초보양 앰플</span>",
       body:
         "천삼진 초보양 앰플은 야생 산삼 배양 성분을 10개입으로 구성하여 집중 케어 기간 동안 매일 피부에 깊은 영양과 활력을 전달합니다. 피부 재생과 탄력 개선에 도움을 주는 스페셜 케어 앰플입니다.",
-      meta: "10ml ㅣ 200,000원 ㅣ ampoule 10ml × 10EA",
+      meta: "10ml ㅣ 220,000원 ㅣ ampoule 10ml × 10EA",
       image: "assets/cheonsamjin-ampoule.png",
       alt: "천삼진 초보양 앰플 제품 이미지",
       thumbLabel: "초보양 앰플",
