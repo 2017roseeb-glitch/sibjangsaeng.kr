@@ -2,6 +2,11 @@ const slides = Array.from(document.querySelectorAll(".hero-slide"));
 const dots = Array.from(document.querySelectorAll("[data-slide-to]"));
 const prevButton = document.querySelector("[data-slide-prev]");
 const nextButton = document.querySelector("[data-slide-next]");
+
+if (window.location.hash === "#top") {
+  window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+}
+
 const siteHeader = document.querySelector(".site-header");
 const menuButton = document.querySelector(".menu-button");
 const languageMenu = document.querySelector(".language-menu");
