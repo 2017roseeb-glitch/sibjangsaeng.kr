@@ -368,16 +368,20 @@ a {
 }
 
 .product-thumbs {
-  align-items: end;
+  align-items: center;
   bottom: 32px;
-  display: block;
+  display: flex;
+  gap: 10px;
   left: clamp(130px, 14vw, 276px);
-  max-width: min(410px, 40vw);
+  max-width: min(616px, calc(100vw - 360px));
   position: absolute;
+  width: min(616px, calc(100vw - 360px));
   z-index: 3;
 }
 
 .product-thumbs-viewport {
+  flex: 1;
+  min-width: 0;
   overflow: hidden;
   width: 100%;
 }
@@ -386,11 +390,12 @@ a {
   align-items: end;
   display: flex;
   gap: 14px;
+  touch-action: pan-y;
   transition: transform 360ms ease;
   will-change: transform;
 }
 
-.product-thumbs button {
+.product-thumbs-track button {
   align-items: center;
   appearance: none;
   background: transparent;
@@ -435,14 +440,14 @@ a {
   white-space: nowrap;
 }
 
-html.is-translated .product-thumbs button {
+html.is-translated .product-thumbs-track button {
   flex-basis: 104px;
   min-width: 104px;
 }
 
 html.is-translated .product-thumbs {
-  max-width: min(584px, 46vw);
-  width: min(584px, 46vw);
+  max-width: min(676px, 50vw);
+  width: min(676px, 50vw);
 }
 
 html.is-translated .product-thumbs span {
@@ -467,6 +472,35 @@ html.is-translated .product-thumbs span {
 
 .product-thumbs button.is-active {
   color: #fff;
+}
+
+.product-thumb-arrow {
+  align-items: center;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex: 0 0 34px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  height: 34px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0 0 3px;
+  transition: background 180ms ease, opacity 180ms ease;
+  width: 34px;
+}
+
+.product-thumb-arrow:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.product-thumb-arrow:disabled {
+  cursor: default;
+  opacity: 0.28;
 }
 
 .line-info-section {
@@ -816,13 +850,13 @@ html.is-translated .product-thumbs span {
   .product-thumbs {
     bottom: 24px;
     left: 54px;
-    max-width: min(calc(100vw - 108px), 516px);
-    width: min(calc(100vw - 108px), 516px);
+    max-width: min(calc(100vw - 108px), 616px);
+    width: min(calc(100vw - 108px), 616px);
   }
 
   html.is-translated .product-thumbs {
-    max-width: min(calc(100vw - 108px), 600px);
-    width: min(calc(100vw - 108px), 600px);
+    max-width: min(calc(100vw - 108px), 676px);
+    width: min(calc(100vw - 108px), 676px);
   }
 
   .product-copy > p:not(.product-kicker):not(.product-meta) {
@@ -874,8 +908,8 @@ html.is-translated .product-thumbs span {
   .product-thumbs {
     bottom: 24px;
     left: clamp(150px, 14vw, 276px);
-    max-width: min(640px, calc(100vw - 300px));
-    width: min(640px, calc(100vw - 300px));
+    max-width: min(616px, calc(100vw - 300px));
+    width: min(616px, calc(100vw - 300px));
   }
 }
 
@@ -980,35 +1014,54 @@ html.is-translated .product-thumbs span {
 
   .product-thumbs {
     bottom: 14px;
+    gap: 6px;
     left: 28px;
     max-width: calc(100vw - 56px);
     width: calc(100vw - 56px);
   }
 
   .product-thumbs-track {
-    gap: 8px;
+    gap: 6px;
   }
 
-  .product-thumbs button {
-    flex: 0 0 calc((100vw - 88px) / 5);
-    min-width: calc((100vw - 88px) / 5);
-    padding-left: 4px;
-    padding-right: 4px;
+  .product-thumbs-track button,
+  html.is-translated .product-thumbs-track button {
+    flex: 0 0 calc((100vw - 142px) / 4);
+    min-width: calc((100vw - 142px) / 4);
+    padding: 7px 2px 6px;
   }
 
   .product-thumbs img {
-    max-height: 50px;
-    max-width: min(50px, 100%);
+    height: 48px;
+    max-height: 48px;
+    max-width: 100%;
+    object-fit: contain;
+    width: 100%;
   }
 
   .product-thumbs span {
-    font-size: 11px;
+    display: -webkit-box;
+    font-size: 10px;
     line-height: 1.15;
+    min-height: 23px;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    text-align: center;
     white-space: normal;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   .product-thumb-pending {
     height: 58px;
+  }
+
+  .product-thumb-arrow {
+    display: flex;
+    flex-basis: 28px;
+    font-size: 20px;
+    height: 28px;
+    width: 28px;
   }
 
   .product-copy {
@@ -1123,9 +1176,10 @@ html.is-translated .product-thumbs span {
     width: calc(100vw - 44px);
   }
 
-  .product-thumbs button {
-    flex-basis: calc((100vw - 76px) / 5);
-    min-width: calc((100vw - 76px) / 5);
+  .product-thumbs-track button,
+  html.is-translated .product-thumbs-track button {
+    flex-basis: calc((100vw - 130px) / 4);
+    min-width: calc((100vw - 130px) / 4);
   }
 }
 

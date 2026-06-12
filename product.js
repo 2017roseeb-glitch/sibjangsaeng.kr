@@ -469,8 +469,13 @@ const detailVisual = document.querySelector("[data-detail-visual]");
 const detailPrev = document.querySelector("[data-detail-prev]");
 const detailNext = document.querySelector("[data-detail-next]");
 const detailThumbTrack = document.querySelector("[data-detail-thumb-track]");
+const detailThumbPrev = document.querySelector("[data-detail-thumb-prev]");
+const detailThumbNext = document.querySelector("[data-detail-thumb-next]");
 let detailThumbs = [];
 let activeDetail = 0;
+let detailThumbStart = 0;
+let detailThumbTouchStartX = 0;
+let detailThumbTouchStartY = 0;
 const lineInfoContent = document.querySelector(".line-info-content");
 const originalLineInfoHtml = lineInfoContent?.innerHTML || "";
 
@@ -541,7 +546,8 @@ function localizeLineInfo() {
 }
 
 function getVisibleThumbCount() {
-  return window.matchMedia("(max-width: 1280px)").matches ? 5 : 4;
+  const count = window.matchMedia("(max-width: 860px)").matches ? 4 : 5;
+  return Math.min(count, detailProducts.length);
 }
 
 function renderThumbs() {
@@ -571,7 +577,7 @@ function renderThumbs() {
   });
 }
 
-function updateThumbStrip() {
+function updateThumbStrip(keepActiveVisible = true) {
   if (!detailThumbTrack || !detailThumbs.length) return;
 
   const firstThumb = detailThumbs[0];
@@ -580,10 +586,19 @@ function updateThumbStrip() {
   const thumbStep = firstThumb.getBoundingClientRect().width + gap;
   const visibleThumbCount = getVisibleThumbCount();
   const maxStart = Math.max(0, detailThumbs.length - visibleThumbCount);
-  const centeredStart = activeDetail - Math.floor(visibleThumbCount / 2);
-  const startIndex = Math.min(Math.max(0, centeredStart), maxStart);
 
-  detailThumbTrack.style.transform = `translateX(${-startIndex * thumbStep}px)`;
+  if (keepActiveVisible) {
+    if (activeDetail < detailThumbStart) {
+      detailThumbStart = activeDetail;
+    } else if (activeDetail >= detailThumbStart + visibleThumbCount) {
+      detailThumbStart = activeDetail - visibleThumbCount + 1;
+    }
+  }
+
+  detailThumbStart = Math.min(Math.max(0, detailThumbStart), maxStart);
+  detailThumbTrack.style.transform = `translateX(${-detailThumbStart * thumbStep}px)`;
+  detailThumbPrev?.toggleAttribute("disabled", detailThumbStart === 0);
+  detailThumbNext?.toggleAttribute("disabled", detailThumbStart === maxStart);
 }
 
 function renderDetail(index) {
@@ -616,6 +631,37 @@ function renderDetail(index) {
 
 detailPrev?.addEventListener("click", () => renderDetail(activeDetail - 1));
 detailNext?.addEventListener("click", () => renderDetail(activeDetail + 1));
+detailThumbPrev?.addEventListener("click", () => {
+  detailThumbStart -= 1;
+  updateThumbStrip(false);
+});
+detailThumbNext?.addEventListener("click", () => {
+  detailThumbStart += 1;
+  updateThumbStrip(false);
+});
+
+detailThumbTrack?.addEventListener(
+  "touchstart",
+  (event) => {
+    detailThumbTouchStartX = event.touches[0]?.clientX || 0;
+    detailThumbTouchStartY = event.touches[0]?.clientY || 0;
+  },
+  { passive: true }
+);
+
+detailThumbTrack?.addEventListener(
+  "touchend",
+  (event) => {
+    const touch = event.changedTouches[0];
+    const diffX = (touch?.clientX || 0) - detailThumbTouchStartX;
+    const diffY = (touch?.clientY || 0) - detailThumbTouchStartY;
+
+    if (Math.abs(diffX) < 34 || Math.abs(diffX) <= Math.abs(diffY)) return;
+    detailThumbStart += diffX < 0 ? 1 : -1;
+    updateThumbStrip(false);
+  },
+  { passive: true }
+);
 
 const productHeader = document.querySelector(".product-header");
 const productMenuButton = document.querySelector("[data-product-menu-button]");
