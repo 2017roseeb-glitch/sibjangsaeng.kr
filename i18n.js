@@ -61,7 +61,7 @@ const SJS_I18N = {
       footer: {
         company: "로제화장품 주식회사 | 대표 : 조종현",
         business: "사업자등록번호 : 132-86-15385",
-        address: "주소 : 경기도 포천시 소흘읍 죽엽산로 고모리385-89",
+        address: "주소 : 경기도 포천시 소흘읍 죽엽산로 385-89",
       },
       product: {
         genericBody:
