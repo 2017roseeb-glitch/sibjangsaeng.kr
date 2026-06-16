@@ -495,7 +495,8 @@ body.has-landing:not(.is-past-landing) .language-panel button:hover {
   text-transform: none;
 }
 
-.hero h1 {
+.hero h1,
+.hero h2 {
   font-family: "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
   font-size: clamp(30px, 3.35vw, 54px);
   font-weight: 800;
@@ -517,6 +518,7 @@ body.has-landing:not(.is-past-landing) .language-panel button:hover {
 
 .hero-subtitle,
 .hero h1,
+.hero h2,
 .hero-copy,
 .hero-content .primary-link {
   opacity: 0;
@@ -525,12 +527,14 @@ body.has-landing:not(.is-past-landing) .language-panel button:hover {
 
 .hero-slide.is-active .hero-subtitle,
 .hero-slide.is-active h1,
+.hero-slide.is-active h2,
 .hero-slide.is-active .hero-copy,
 .hero-slide.is-active .primary-link {
   animation: riseIn 760ms ease forwards;
 }
 
-.hero-slide.is-active h1 {
+.hero-slide.is-active h1,
+.hero-slide.is-active h2 {
   animation-delay: 120ms;
 }
 
@@ -1448,7 +1452,8 @@ footer {
     top: auto;
   }
 
-  .hero h1 {
+  .hero h1,
+  .hero h2 {
     white-space: normal;
   }
 
@@ -1665,7 +1670,8 @@ footer {
     width: min(172px, 54vw);
   }
 
-  .hero h1 {
+  .hero h1,
+  .hero h2 {
     font-size: 30px;
     white-space: normal;
   }
