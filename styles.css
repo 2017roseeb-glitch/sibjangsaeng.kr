@@ -1133,13 +1133,6 @@ body.has-landing:not(.is-past-landing) .language-panel button:hover {
   margin-top: 34px !important;
 }
 
-.store-actions {
-  display: flex;
-  gap: 22px;
-  justify-content: center;
-  margin-top: 36px;
-}
-
 footer {
   align-items: center;
   background: var(--ink);
@@ -1631,7 +1624,6 @@ footer {
     padding: 70px 22px 38px;
   }
 
-  .store-actions,
   footer {
     align-items: center;
     flex-direction: column;

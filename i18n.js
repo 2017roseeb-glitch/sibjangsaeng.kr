@@ -9,7 +9,7 @@ const SJS_I18N = {
         description:
           "십장생화장품 공식 브랜드 사이트. 로제화장품의 프리미엄 한방 스킨케어 브랜드 십장생과 천지향, 천심, 천삼진, 예결, 아름다운선, 금안 제품 라인을 만나보세요.",
       },
-      nav: { brand: "브랜드", lines: "제품라인", store: "스토어" },
+      nav: { brand: "브랜드", lines: "제품라인", contact: "문의하기" },
       common: { learnMore: "더 알아보기", exploreLine: "라인 둘러보기" },
       line: {
         cheonjihyang: "천지향",
@@ -79,7 +79,7 @@ const SJS_I18N = {
         description:
           "SibJangSaeng is a premium Korean herbal skincare brand by Rosee Cosmetics, offering Cheonjihyang, Cheonshim, Cheonsamjin, Yegyul, Beautiful Line, and Kum-An collections.",
       },
-      nav: { brand: "Brand", lines: "Product Lines", store: "Store" },
+      nav: { brand: "Brand", lines: "Product Lines", contact: "Contact" },
       common: { learnMore: "Learn more", exploreLine: "Explore line" },
       line: {
         cheonjihyang: "Cheonjihyang",
@@ -147,7 +147,7 @@ const SJS_I18N = {
 const localeOverrides = {
   ja: {
     meta: { title: "シプチャンセン | 時を整える美しさ" },
-    nav: { brand: "ブランド", lines: "製品ライン", store: "ストア" },
+    nav: { brand: "ブランド", lines: "製品ライン", contact: "お問い合わせ" },
     common: { learnMore: "詳しく見る", exploreLine: "ラインを見る" },
     line: {
       cheonjihyang: "チョンジヒャン",
@@ -169,7 +169,7 @@ const localeOverrides = {
   },
   "zh-CN": {
     meta: { title: "十长生 | 掌控时间之美" },
-    nav: { brand: "品牌", lines: "产品系列", store: "商店" },
+    nav: { brand: "品牌", lines: "产品系列", contact: "联系我们" },
     common: { learnMore: "了解更多", exploreLine: "浏览系列" },
     line: { cheonjihyang: "天地香", cheonsim: "天心", kuman: "金安", cheonsamjin: "天参津", yegyeol: "睿洁", beautiful: "美丽线" },
     home: {
@@ -183,13 +183,13 @@ const localeOverrides = {
     product: { genericBody: "蕴含十长生韩方护肤理念，为肌肤带来舒适保湿、细腻肤质与优雅光泽。", imagePending: "图片准备中", lineInfoQuote: "呵护肌肤自然平衡与美丽的高端韩方系列", lineInfoLead: "结合自然成分与韩方护肤理念，帮助肌肤保持水润、弹力与优雅光泽。" },
   },
   fr: {
-    nav: { brand: "Marque", lines: "Gammes", store: "Boutique" },
+    nav: { brand: "Marque", lines: "Gammes", contact: "Contact" },
     common: { learnMore: "En savoir plus", exploreLine: "Voir la gamme" },
     home: { hero1: { title: "Une beauté profonde façonnée par le temps", copy: "Un rituel de soin calme et élégant signé SibJangSaeng.", cta: "Voir les gammes" }, hero2: { title: "Plus concentré, plus raffiné", copy: "Une nouvelle essence dorée infusée de l'énergie délicate de Cheonshim." }, hero3: { subtitle: "Né de la beauté coréenne", title: "Le soin profond et élégant de Cheonjihyang", copy: "Un soin premium équilibrant parfum, texture et éclat." }, philosophy: { line1: "La valeur durable de SibJangSaeng", line2: "Pour que votre peau rayonne", line3: "pleinement, plus longtemps.", copy: "SibJangSaeng transforme la force de la nature et l'esthétique coréenne en un rituel de soin moderne." }, ritual: { title1: "La texture de la peau", title2: "touchée par la nature coréenne", p1: "Bourgeons de pin, reishi et ginseng rouge guident la peau vers son équilibre naturel.", p2: "Il n'est pas nécessaire de se hâter. Ce que la nature crée lentement agit avec douceur et précision.", p3: "Commencer la journée par le parfum et la terminer par la texture : c'est notre idée de la beauté." }, contact: { title1: "Pour les partenariats de distribution,", title2: "contactez-nous par e-mail", note: "Cet e-mail est réservé aux demandes de partenariat de distribution." } },
     product: { genericBody: "Un soin herbal SibJangSaeng conçu pour apporter une hydratation confortable, une texture affinée et un éclat gracieux.", imagePending: "Image à venir", lineInfoQuote: "Une gamme premium pour l’équilibre naturel et la beauté de la peau", lineInfoLead: "Cette gamme associe des ingrédients inspirés de la nature à la philosophie coréenne du soin herbal." },
   },
   it: {
-    nav: { brand: "Brand", lines: "Linee prodotto", store: "Store" },
+    nav: { brand: "Brand", lines: "Linee prodotto", contact: "Contatti" },
     common: { learnMore: "Scopri di più", exploreLine: "Esplora la linea" },
     home: {
       hero1: { title: "Bellezza profonda plasmata dal tempo", copy: "Un rituale skincare calmo ed elegante di SibJangSaeng.", cta: "Vedi le linee" },
@@ -202,7 +202,7 @@ const localeOverrides = {
     product: { genericBody: "Un prodotto skincare herbal SibJangSaeng pensato per donare idratazione confortevole, texture raffinata e luminosità elegante.", imagePending: "Immagine in arrivo", lineInfoQuote: "Una linea premium per equilibrio e bellezza naturale della pelle", lineInfoLead: "Questa linea unisce ingredienti ispirati alla natura e filosofia skincare herbal coreana." },
   },
   es: {
-    nav: { brand: "Marca", lines: "Líneas", store: "Tienda" },
+    nav: { brand: "Marca", lines: "Líneas", contact: "Contacto" },
     common: { learnMore: "Ver más", exploreLine: "Explorar línea" },
     home: {
       hero1: { title: "Belleza profunda moldeada por el tiempo", copy: "Un ritual de cuidado sereno y elegante de SibJangSaeng.", cta: "Ver líneas" },
@@ -215,7 +215,7 @@ const localeOverrides = {
     product: { genericBody: "Un producto herbal de SibJangSaeng diseñado para aportar hidratación confortable, textura refinada y un brillo elegante.", imagePending: "Imagen próximamente", lineInfoQuote: "Una línea premium para el equilibrio natural y la belleza de la piel", lineInfoLead: "Esta línea combina ingredientes inspirados en la naturaleza con la filosofía herbal coreana." },
   },
   de: {
-    nav: { brand: "Marke", lines: "Produktlinien", store: "Shop" },
+    nav: { brand: "Marke", lines: "Produktlinien", contact: "Kontakt" },
     common: { learnMore: "Mehr erfahren", exploreLine: "Linie ansehen" },
     home: {
       hero1: { title: "Tiefe Schönheit, von Zeit geformt", copy: "Ein ruhiges, elegantes Pflegeritual von SibJangSaeng.", cta: "Produktlinien ansehen" },
@@ -228,7 +228,7 @@ const localeOverrides = {
     product: { genericBody: "Ein SibJangSaeng Kräuterpflegeprodukt für angenehme Feuchtigkeit, verfeinerte Textur und einen eleganten Glow.", imagePending: "Bild folgt", lineInfoQuote: "Eine Premium-Kräuterlinie für natürliches Gleichgewicht und Schönheit", lineInfoLead: "Diese Linie verbindet naturinspirierte Inhaltsstoffe mit koreanischer Kräuterpflegephilosophie." },
   },
   pt: {
-    nav: { brand: "Marca", lines: "Linhas", store: "Loja" },
+    nav: { brand: "Marca", lines: "Linhas", contact: "Contato" },
     common: { learnMore: "Saiba mais", exploreLine: "Explorar linha" },
     home: {
       hero1: { title: "Beleza profunda moldada pelo tempo", copy: "Um ritual de skincare calmo e elegante da SibJangSaeng.", cta: "Ver linhas" },
@@ -241,7 +241,7 @@ const localeOverrides = {
     product: { genericBody: "Um produto herbal SibJangSaeng criado para oferecer hidratação confortável, textura refinada e brilho elegante.", imagePending: "Imagem em breve", lineInfoQuote: "Uma linha premium para equilíbrio natural e beleza da pele", lineInfoLead: "Esta linha combina ingredientes inspirados na natureza com a filosofia herbal coreana de skincare." },
   },
   th: {
-    nav: { brand: "แบรนด์", lines: "ไลน์ผลิตภัณฑ์", store: "ร้านค้า" },
+    nav: { brand: "แบรนด์", lines: "ไลน์ผลิตภัณฑ์", contact: "ติดต่อ" },
     common: { learnMore: "ดูเพิ่มเติม", exploreLine: "ดูไลน์ผลิตภัณฑ์" },
     home: {
       hero1: { title: "ความงามลึกซึ้งที่ก่อร่างด้วยกาลเวลา", copy: "พิธีกรรมดูแลผิวที่สงบและสง่างามจาก SibJangSaeng", cta: "ดูไลน์ผลิตภัณฑ์" },
@@ -259,7 +259,7 @@ const localeOverrides = {
       description:
         "SibJangSaeng — премиальный корейский бренд травяного ухода за кожей от Rosee Cosmetics.",
     },
-    nav: { brand: "Бренд", lines: "Линии", store: "Магазин" },
+    nav: { brand: "Бренд", lines: "Линии", contact: "Контакты" },
     common: { learnMore: "Подробнее", exploreLine: "Смотреть линию" },
     line: {
       cheonjihyang: "Cheonjihyang",
@@ -327,7 +327,7 @@ const localeOverrides = {
       description:
         "SibJangSaeng — Rosee Cosmetics tomonidan yaratilgan premium koreys oʻsimlik asosidagi teri parvarishi brendi.",
     },
-    nav: { brand: "Brend", lines: "Mahsulot liniyalari", store: "Doʻkon" },
+    nav: { brand: "Brend", lines: "Mahsulot liniyalari", contact: "Aloqa" },
     common: { learnMore: "Batafsil", exploreLine: "Liniyani koʻrish" },
     line: {
       cheonjihyang: "Cheonjihyang",
