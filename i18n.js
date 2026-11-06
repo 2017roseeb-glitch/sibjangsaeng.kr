@@ -21,8 +21,8 @@ const SJS_I18N = {
       },
       home: {
         hero1: {
-          title: "시간이 빚어낸 깊은 아름다움",
-          copy: "십장생이 전하는 고요하고 우아한 피부 리추얼.",
+          title: "피부의 기본을 채우는 천심",
+          copy: '<span class="mobile-copy-line">매일의 기초 케어에 깊은 보습과</span> <span class="mobile-copy-line">은은한 윤기를 더하는 천심 한방 스킨케어.</span>',
           cta: "제품 라인 보기",
         },
         hero2: {
@@ -91,8 +91,8 @@ const SJS_I18N = {
       },
       home: {
         hero1: {
-          title: "Deep beauty shaped by time",
-          copy: "A calm and elegant skincare ritual from SibJangSaeng.",
+          title: "Daily skincare essentials, Cheonshim",
+          copy: "Cheonshim herbal skincare brings rich moisture and a soft glow to your daily routine.",
           cta: "View product lines",
         },
         hero2: {
@@ -158,7 +158,7 @@ const localeOverrides = {
       beautiful: "ビューティフルライン",
     },
     home: {
-      hero1: { title: "時が育んだ深い美しさ", copy: "シプチャンセンが届ける静かで優雅なスキンケアリチュアル。", cta: "製品ラインを見る" },
+      hero1: { title: "肌の基本を満たすチョンシム", copy: "毎日の基礎ケアに豊かなうるおいとほのかな艶を添える、チョンシムの韓方スキンケア。", cta: "製品ラインを見る" },
       hero2: { title: "より濃密に、より上品に", copy: "チョンシムの繊細な力を込めた新しいゴールドエッセンス。" },
       hero3: { subtitle: "韓国の美しさから始まる", title: "チョンジヒャンの深く優雅なスキンケア", copy: "香り、肌理、艶のバランスで完成するプレミアムケア。" },
       philosophy: { line1: "受け継がれてきたシプチャンセンの価値", line2: "あなたの肌がより長く", line3: "美しく輝くために。", copy: "シプチャンセンは自然の持続性と韓国的な美意識を現代のスキンケアリチュアルとして表現します。" },
@@ -173,7 +173,7 @@ const localeOverrides = {
     common: { learnMore: "了解更多", exploreLine: "浏览系列" },
     line: { cheonjihyang: "天地香", cheonsim: "天心", kuman: "金安", cheonsamjin: "天参津", yegyeol: "睿洁", beautiful: "美丽线" },
     home: {
-      hero1: { title: "由时间塑造的深层之美", copy: "十长生带来的宁静优雅护肤仪式。", cta: "查看产品系列" },
+      hero1: { title: "日常基础养护，天心", copy: "天心韩方护肤，为日常基础护理增添丰润保湿与柔和光泽。", cta: "查看产品系列" },
       hero2: { title: "更浓缩，更具格调", copy: "蕴含天心细腻能量的全新黄金精华。" },
       hero3: { subtitle: "源自韩国之美", title: "天地香深邃优雅的护肤", copy: "以香气、肤质与光泽的平衡完成高端护理。" },
       philosophy: { line1: "延续至今的十长生价值", line2: "让您的肌肤更长久地", line3: "完整绽放光彩。", copy: "十长生将自然的持久生命力与韩国美学转化为现代护肤仪式，重视深邃香气、细致质地与日常舒适感。" },
@@ -185,14 +185,14 @@ const localeOverrides = {
   fr: {
     nav: { brand: "Marque", lines: "Gammes", contact: "Contact" },
     common: { learnMore: "En savoir plus", exploreLine: "Voir la gamme" },
-    home: { hero1: { title: "Une beauté profonde façonnée par le temps", copy: "Un rituel de soin calme et élégant signé SibJangSaeng.", cta: "Voir les gammes" }, hero2: { title: "Plus concentré, plus raffiné", copy: "Une nouvelle essence dorée infusée de l'énergie délicate de Cheonshim." }, hero3: { subtitle: "Né de la beauté coréenne", title: "Le soin profond et élégant de Cheonjihyang", copy: "Un soin premium équilibrant parfum, texture et éclat." }, philosophy: { line1: "La valeur durable de SibJangSaeng", line2: "Pour que votre peau rayonne", line3: "pleinement, plus longtemps.", copy: "SibJangSaeng transforme la force de la nature et l'esthétique coréenne en un rituel de soin moderne." }, ritual: { title1: "La texture de la peau", title2: "touchée par la nature coréenne", p1: "Bourgeons de pin, reishi et ginseng rouge guident la peau vers son équilibre naturel.", p2: "Il n'est pas nécessaire de se hâter. Ce que la nature crée lentement agit avec douceur et précision.", p3: "Commencer la journée par le parfum et la terminer par la texture : c'est notre idée de la beauté." }, contact: { title1: "Pour les partenariats de distribution,", title2: "contactez-nous par e-mail", note: "Cet e-mail est réservé aux demandes de partenariat de distribution." } },
+    home: { hero1: { title: "Les essentiels quotidiens Cheonshim", copy: "Les soins coréens aux plantes Cheonshim apportent une hydratation riche et un éclat doux à votre routine quotidienne.", cta: "Voir les gammes" }, hero2: { title: "Plus concentré, plus raffiné", copy: "Une nouvelle essence dorée infusée de l'énergie délicate de Cheonshim." }, hero3: { subtitle: "Né de la beauté coréenne", title: "Le soin profond et élégant de Cheonjihyang", copy: "Un soin premium équilibrant parfum, texture et éclat." }, philosophy: { line1: "La valeur durable de SibJangSaeng", line2: "Pour que votre peau rayonne", line3: "pleinement, plus longtemps.", copy: "SibJangSaeng transforme la force de la nature et l'esthétique coréenne en un rituel de soin moderne." }, ritual: { title1: "La texture de la peau", title2: "touchée par la nature coréenne", p1: "Bourgeons de pin, reishi et ginseng rouge guident la peau vers son équilibre naturel.", p2: "Il n'est pas nécessaire de se hâter. Ce que la nature crée lentement agit avec douceur et précision.", p3: "Commencer la journée par le parfum et la terminer par la texture : c'est notre idée de la beauté." }, contact: { title1: "Pour les partenariats de distribution,", title2: "contactez-nous par e-mail", note: "Cet e-mail est réservé aux demandes de partenariat de distribution." } },
     product: { genericBody: "Un soin herbal SibJangSaeng conçu pour apporter une hydratation confortable, une texture affinée et un éclat gracieux.", imagePending: "Image à venir", lineInfoQuote: "Une gamme premium pour l’équilibre naturel et la beauté de la peau", lineInfoLead: "Cette gamme associe des ingrédients inspirés de la nature à la philosophie coréenne du soin herbal." },
   },
   it: {
     nav: { brand: "Brand", lines: "Linee prodotto", contact: "Contatti" },
     common: { learnMore: "Scopri di più", exploreLine: "Esplora la linea" },
     home: {
-      hero1: { title: "Bellezza profonda plasmata dal tempo", copy: "Un rituale skincare calmo ed elegante di SibJangSaeng.", cta: "Vedi le linee" },
+      hero1: { title: "Gli essenziali quotidiani Cheonshim", copy: "La skincare coreana alle erbe Cheonshim dona ricca idratazione e una delicata luminosità alla routine quotidiana.", cta: "Vedi le linee" },
       hero2: { title: "Più concentrato, più raffinato", copy: "Una nuova essenza oro con la delicata energia di Cheonshim." },
       hero3: { subtitle: "Nata dalla bellezza coreana", title: "La skincare profonda ed elegante di Cheonjihyang", copy: "Un trattamento premium tra profumo, texture e luminosità." },
       philosophy: { line1: "Il valore duraturo di SibJangSaeng", line2: "Per una pelle luminosa", line3: "più a lungo e pienamente.", copy: "SibJangSaeng interpreta la forza della natura e l'estetica coreana come un rituale skincare moderno." },
@@ -205,7 +205,7 @@ const localeOverrides = {
     nav: { brand: "Marca", lines: "Líneas", contact: "Contacto" },
     common: { learnMore: "Ver más", exploreLine: "Explorar línea" },
     home: {
-      hero1: { title: "Belleza profunda moldeada por el tiempo", copy: "Un ritual de cuidado sereno y elegante de SibJangSaeng.", cta: "Ver líneas" },
+      hero1: { title: "Los esenciales diarios de Cheonshim", copy: "El cuidado herbal coreano Cheonshim aporta hidratación profunda y un brillo suave a tu rutina diaria.", cta: "Ver líneas" },
       hero2: { title: "Más concentración, más elegancia", copy: "Una nueva esencia dorada con la energía delicada de Cheonshim." },
       hero3: { subtitle: "Nacida de la belleza coreana", title: "El cuidado profundo y elegante de Cheonjihyang", copy: "Cuidado premium con equilibrio de aroma, textura y brillo." },
       philosophy: { line1: "El valor duradero de SibJangSaeng", line2: "Para que tu piel brille", line3: "plenamente y por más tiempo.", copy: "SibJangSaeng interpreta la fuerza de la naturaleza y la estética coreana como un ritual moderno de cuidado de la piel." },
@@ -218,7 +218,7 @@ const localeOverrides = {
     nav: { brand: "Marke", lines: "Produktlinien", contact: "Kontakt" },
     common: { learnMore: "Mehr erfahren", exploreLine: "Linie ansehen" },
     home: {
-      hero1: { title: "Tiefe Schönheit, von Zeit geformt", copy: "Ein ruhiges, elegantes Pflegeritual von SibJangSaeng.", cta: "Produktlinien ansehen" },
+      hero1: { title: "Tägliche Basispflege mit Cheonshim", copy: "Die koreanische Kräuterpflege Cheonshim bereichert die tägliche Routine mit intensiver Feuchtigkeit und sanftem Glanz.", cta: "Produktlinien ansehen" },
       hero2: { title: "Konzentrierter und eleganter", copy: "Eine neue Gold-Essenz mit der feinen Energie von Cheonshim." },
       hero3: { subtitle: "Aus koreanischer Schönheit geboren", title: "Tiefe, elegante Pflege von Cheonjihyang", copy: "Premium-Pflege im Gleichgewicht von Duft, Textur und Glow." },
       philosophy: { line1: "Der bleibende Wert von SibJangSaeng", line2: "Damit Ihre Haut länger", line3: "vollkommen strahlen kann.", copy: "SibJangSaeng überträgt die Kraft der Natur und koreanische Ästhetik in ein modernes Pflegeritual." },
@@ -231,7 +231,7 @@ const localeOverrides = {
     nav: { brand: "Marca", lines: "Linhas", contact: "Contato" },
     common: { learnMore: "Saiba mais", exploreLine: "Explorar linha" },
     home: {
-      hero1: { title: "Beleza profunda moldada pelo tempo", copy: "Um ritual de skincare calmo e elegante da SibJangSaeng.", cta: "Ver linhas" },
+      hero1: { title: "Os essenciais diários de Cheonshim", copy: "O cuidado herbal coreano Cheonshim traz hidratação intensa e um brilho suave à sua rotina diária.", cta: "Ver linhas" },
       hero2: { title: "Mais concentrado, mais refinado", copy: "Uma nova essência dourada com a energia delicada de Cheonshim." },
       hero3: { subtitle: "Nascida da beleza coreana", title: "Skincare profundo e elegante de Cheonjihyang", copy: "Cuidado premium equilibrando aroma, textura e brilho." },
       philosophy: { line1: "O valor duradouro da SibJangSaeng", line2: "Para que sua pele brilhe", line3: "plenamente por mais tempo.", copy: "A SibJangSaeng transforma a força da natureza e a estética coreana em um ritual moderno de skincare." },
@@ -244,7 +244,7 @@ const localeOverrides = {
     nav: { brand: "แบรนด์", lines: "ไลน์ผลิตภัณฑ์", contact: "ติดต่อ" },
     common: { learnMore: "ดูเพิ่มเติม", exploreLine: "ดูไลน์ผลิตภัณฑ์" },
     home: {
-      hero1: { title: "ความงามลึกซึ้งที่ก่อร่างด้วยกาลเวลา", copy: "พิธีกรรมดูแลผิวที่สงบและสง่างามจาก SibJangSaeng", cta: "ดูไลน์ผลิตภัณฑ์" },
+      hero1: { title: "ดูแลผิวพื้นฐานทุกวันด้วย Cheonshim", copy: "สกินแคร์สมุนไพรเกาหลี Cheonshim เติมความชุ่มชื้นและความเปล่งประกายอย่างอ่อนโยนให้การดูแลผิวประจำวัน", cta: "ดูไลน์ผลิตภัณฑ์" },
       hero2: { title: "เข้มข้นขึ้น งดงามยิ่งขึ้น", copy: "เอสเซนส์ทองคำใหม่ที่อัดแน่นด้วยพลังละเอียดอ่อนของ Cheonshim" },
       hero3: { subtitle: "เริ่มต้นจากความงามแบบเกาหลี", title: "สกินแคร์ลึกซึ้งและสง่างามของ Cheonjihyang", copy: "การดูแลพรีเมียมที่สมดุลระหว่างกลิ่น เนื้อสัมผัส และความเปล่งประกาย" },
       philosophy: { line1: "คุณค่าที่ยืนยาวของ SibJangSaeng", line2: "เพื่อให้ผิวของคุณเปล่งประกาย", line3: "อย่างสมบูรณ์และยาวนาน", copy: "SibJangSaeng ถ่ายทอดพลังของธรรมชาติและสุนทรียภาพเกาหลีเป็นพิธีกรรมดูแลผิวสมัยใหม่" },
@@ -271,8 +271,8 @@ const localeOverrides = {
     },
     home: {
       hero1: {
-        title: "Глубокая красота, созданная временем",
-        copy: "Спокойный и элегантный ритуал ухода от SibJangSaeng.",
+        title: "Ежедневный базовый уход Cheonshim",
+        copy: "Корейский травяной уход Cheonshim дарит коже насыщенное увлажнение и мягкое сияние каждый день.",
         cta: "Смотреть линии",
       },
       hero2: {
@@ -339,8 +339,8 @@ const localeOverrides = {
     },
     home: {
       hero1: {
-        title: "Vaqt shakllantirgan chuqur goʻzallik",
-        copy: "SibJangSaengdan sokin va nafis teri parvarishi marosimi.",
+        title: "Cheonshim bilan kundalik asosiy parvarish",
+        copy: "Cheonshim koreys oʻsimlik parvarishi kundalik tartibingizga chuqur namlik va mayin jilo qoʻshadi.",
         cta: "Mahsulot liniyalarini koʻrish",
       },
       hero2: {

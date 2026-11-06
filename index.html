@@ -23,7 +23,7 @@
     <meta property="og:title" content="십장생화장품 | 시간을 다스리는 한방 스킨케어" />
     <meta property="og:description" content="십장생화장품 공식 브랜드 사이트. 로제화장품의 프리미엄 한방 스킨케어 브랜드 십장생을 만나보세요." />
     <meta property="og:url" content="https://sibjangsaeng.kr/" />
-    <meta property="og:image" content="https://sibjangsaeng.kr/assets/hero-slide-01.jpg" />
+    <meta property="og:image" content="https://sibjangsaeng.kr/assets/hero-slide-01-cheonsim.jpg" />
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:site_name" content="십장생화장품" />
     <link rel="alternate" hreflang="ko" href="https://sibjangsaeng.kr/" />
@@ -124,18 +124,21 @@
       <section class="hero" aria-label="십장생 메인 슬라이드">
         <div class="hero-slider">
           <article class="hero-slide hero-slide-campaign is-active">
-            <img class="hero-image" src="assets/hero-slide-01.jpg" alt="한복을 입은 모델과 꽃이 어우러진 십장생 캠페인 이미지" />
+            <picture>
+              <source media="(max-width: 780px)" srcset="assets/hero-slide-01-cheonsim-mobile.jpg" />
+              <img class="hero-image" src="assets/hero-slide-01-cheonsim.jpg" alt="초록빛 배경에 한복을 입은 모델과 천심 기초라인 제품이 어우러진 이미지" fetchpriority="high" />
+            </picture>
             <div class="hero-content">
-              <p class="hero-subtitle">Timeless Beauty, SIBJANGSAENG</p>
-              <h1 data-i18n="home.hero1.title">시간이 빚어낸 깊은 아름다움</h1>
+              <p class="hero-subtitle">CHEONSHIM Essential Skincare</p>
+              <h1 data-i18n="home.hero1.title">피부의 기본을 채우는 천심</h1>
               <p class="hero-copy">
-                <span data-i18n="home.hero1.copy">십장생이 전하는 고요하고 우아한 피부 리추얼.</span>
+                <span data-i18n-html="home.hero1.copy"><span class="mobile-copy-line">매일의 기초 케어에 깊은 보습과</span> <span class="mobile-copy-line">은은한 윤기를 더하는 천심 한방 스킨케어.</span></span>
               </p>
-              <a class="primary-link" href="#lines" data-i18n="home.hero1.cta">제품 라인 보기</a>
+              <a class="primary-link" href="cheonsim.html" data-i18n="home.hero1.cta">제품 라인 보기</a>
             </div>
           </article>
           <article class="hero-slide hero-slide-cheonsim">
-            <img class="hero-image" src="assets/hero-slide-02.jpg" alt="천심 골드 에센스 제품이 놓인 십장생 캠페인 이미지" />
+            <img class="hero-image" src="assets/hero-slide-02-gold-essence.jpg" alt="한복 원단과 석재 위에 놓인 천심 골드 에센스 제품 이미지" />
             <div class="hero-content">
               <p class="hero-subtitle">Renewed CHEONSIM Gold Essence</p>
               <h2 class="mobile-fixed-title" data-i18n-html="home.hero2.title">

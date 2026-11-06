@@ -405,6 +405,20 @@ body.has-landing:not(.is-past-landing) .language-panel button:hover {
   width: 100%;
 }
 
+.hero-slide-campaign .hero-image {
+  object-position: 70% center;
+}
+
+.hero-slide-campaign .hero-content {
+  bottom: 16vh;
+  max-width: 560px;
+  top: auto;
+}
+
+.hero-slide-campaign h1 {
+  white-space: normal;
+}
+
 .hero-slide-cheonsim .hero-image {
   object-position: 58% center;
   transform: scale(1.04);
@@ -1433,8 +1447,8 @@ footer {
   }
 
   .hero {
-    height: 100svh;
-    min-height: 680px;
+    height: 100dvh;
+    min-height: 100dvh;
   }
 
   .hero-content {
@@ -1458,12 +1472,19 @@ footer {
     content: none;
   }
 
-  .hero-slide-campaign .hero-image {
-    object-position: 76% center;
+  .hero-slide-campaign .hero-content {
+    bottom: 126px;
+    max-width: none;
+  }
+
+  .hero-slide-campaign .mobile-copy-line {
+    display: block;
+    font-size: clamp(13px, 4vw, 16px);
+    white-space: nowrap;
   }
 
   .hero-slide-cheonsim .hero-image {
-    object-position: 64% center;
+    object-position: 78% center;
     transform: none;
   }
 
